@@ -74,7 +74,7 @@ function showScene(country) {
   svg.append("text")
     .attr("x", 50)
     .attr("y", 40)
-    .text(`Life Expectancy Over Time – ${country}`)
+    .text(`Scene 1: Life Expectancy Over Time – ${country}`)
     .attr("class", "annotation");
 
   const x = d3.scaleLinear().domain(d3.extent(data, d => d.Year)).range([60, 750]);
