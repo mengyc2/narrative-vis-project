@@ -13,7 +13,7 @@ let globalData;
 const countrySelect = d3.select("#country-select");
 
 // Load data
-d3.csv("https://raw.githubusercontent.com/mengyc2/narrative-vis-project/main/data/life-expectancy.csv").then(data => {
+d3.csv("data/life-expectancy.csv").then(data => {
   data.forEach(d => {
     d.Year = +d.Year;
     d["Life expectancy"] = +d["Period life expectancy at birth"];
