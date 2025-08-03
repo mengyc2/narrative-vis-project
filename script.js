@@ -1,6 +1,6 @@
 // --- script.js ---
 
-// Create SVG canvas
+// SVG canvas
 const svg = d3.select("#chart")
   .append("svg")
   .attr("width", 800)
@@ -12,7 +12,7 @@ let globalData;
 
 const countrySelect = d3.select("#country-select");
 
-// Load data
+// data
 d3.csv("data/life-expectancy.csv").then(data => {
   data.forEach(d => {
     d.Year = +d.Year;
